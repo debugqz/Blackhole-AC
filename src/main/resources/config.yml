@@ -1,0 +1,88 @@
+physics:
+  epsilon: 0.03
+
+punishments:
+  flag-rate:
+    threshold: 18
+    ban-duration-seconds: 86400
+
+alerts:
+  broadcast-enabled: true
+  console-log-enabled: true
+
+# Per-check settings (section 13). enabled toggles the check entirely.
+# alert-vl notifies staff, punish-vl runs punish-command and resets that
+# check's VL. {player} is substituted with the player's name. Never
+# customize punish-command to reveal which check fired - the player must
+# only ever see the generic message (section 9).
+checks:
+  Speed:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 30
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  Fly:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 30
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  Jesus:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 30
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  Spider:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 30
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  NoSlow:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 30
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  NoFall:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 30
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  Reach:
+    enabled: true
+    alert-vl: 8
+    punish-vl: 20
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  KillAura:
+    enabled: true
+    alert-vl: 6
+    punish-vl: 15
+    punish-command: "ban {player} Has sido expulsado del servidor"
+  Aimbot:
+    enabled: true
+    alert-vl: 8
+    punish-vl: 20
+    punish-command: "ban {player} Has sido expulsado del servidor"
+  AutoClicker:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 25
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  AntiKnockback:
+    enabled: true
+    alert-vl: 10
+    punish-vl: 25
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  Scaffold:
+    enabled: true
+    alert-vl: 8
+    punish-vl: 20
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  Tower:
+    enabled: true
+    alert-vl: 8
+    punish-vl: 20
+    punish-command: "kick {player} Has sido expulsado del servidor"
+  Xray:
+    enabled: true
+    alert-vl: 5
+    punish-vl: 12
+    punish-command: "ban {player} Has sido expulsado del servidor"

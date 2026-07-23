@@ -1,0 +1,24 @@
+name: Blackhole
+version: ${project.version}
+main: com.blackhole.BlackholePlugin
+api-version: 1.8
+authors: [BlackHole-AC]
+description: Anticheat de movimiento, combate y xray para Spigot 1.8.9
+depend: [ProtocolLib]
+
+commands:
+  anticheat:
+    aliases: [ac, ncp]
+    description: Comando principal del anticheat
+    usage: /<command> <reload|alerts|vl|exempt|tp|history>
+
+permissions:
+  anticheat.alerts:
+    description: Recibe alertas de staff cuando un jugador es flageado
+    default: op
+  anticheat.admin:
+    description: Acceso completo a los comandos administrativos del anticheat
+    default: op
+  anticheat.bypass:
+    description: Exime al jugador de todos los checks
+    default: false
